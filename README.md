@@ -1,6 +1,6 @@
 # This project is learning golang note
 
-## Install golang and config enbiromment
+## Install golang and config enbiromment on Ubuntu
 
 1.Update source list
 ```
