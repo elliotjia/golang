@@ -29,4 +29,18 @@ func main() {
 
 	// grow the slice beyond capacity
 	//slice1 = slice1[0:7] // panic: runtime error: slice bound out of range
+	
+	// slice as function param
+	var arr = [5]int{4, 3, 5, 8, 9}
+	s := arr[:]
+	sum := Sum(s)
+	fmt.Printf("The Sum %d\n", sum)
+}
+
+func Sum(s []int) int {
+	sum := 0
+	for i := 0; i < len(s); i++ {
+		sum += s[i]
+	}
+	return sum
 }
