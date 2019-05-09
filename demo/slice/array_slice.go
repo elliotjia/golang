@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main_1() {
 	var array1 [6]int
 	var slice1 []int = array1[2:5] // item at index 5 not included!(5-1)
 	// var slice1 []int = array1[n:m]
