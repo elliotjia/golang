@@ -6,3 +6,5 @@ var slice1 []type = arr1[:]
 
 slice1 = &arr1
 ```
+
+想去掉 slice1 的最后一个元素，只要 `slice1 = slice1[:len(slice1)-1]`
