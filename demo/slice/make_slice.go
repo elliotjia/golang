@@ -1,9 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func main_2() {
-	var slice1 []int = make([]int, 10) // make([]int, 10, 10)
+func main2() {
+	slice1 := make([]int, 10) // make([]int, 10, 10)
 	// load the array/slice:
 	for i := 0; i < len(slice1); i++ {
 		slice1[i] = 2 * i

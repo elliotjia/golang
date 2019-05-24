@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main_1() {
+func main1() {
 	var array1 [6]int
-	var slice1 []int = array1[2:5] // item at index 5 not included!(5-1)
+	slice1 := array1[2:5] // item at index 5 not included!(5-1)
 	// var slice1 []int = array1[n:m]
 	// slice length is (m - n)
 	// slice1 cap is 4 (array length - 2)
@@ -29,7 +29,7 @@ func main_1() {
 
 	// grow the slice beyond capacity
 	//slice1 = slice1[0:7] // panic: runtime error: slice bound out of range
-	
+
 	// slice as function param
 	var arr = [5]int{4, 3, 5, 8, 9}
 	s := arr[:]
@@ -37,6 +37,7 @@ func main_1() {
 	fmt.Printf("The Sum %d\n", sum)
 }
 
+// Sum is get the slice element sum
 func Sum(s []int) int {
 	sum := 0
 	for i := 0; i < len(s); i++ {

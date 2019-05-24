@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func main() {
-	var slice1 []int = make([]int, 10) // make([]int, 10, 10)
+func main3() {
+	slice1 := make([]int, 10) // make([]int, 10, 10)
 	// load the array/slice:
 	for i := 0; i < len(slice1); i++ {
 		slice1[i] = 2 * i
@@ -16,7 +16,7 @@ func main() {
 
 	// 忽略index
 	var item int
-	for _,item = range slice1 {
+	for _, item = range slice1 {
 		fmt.Printf("%d\n", item)
 	}
 
